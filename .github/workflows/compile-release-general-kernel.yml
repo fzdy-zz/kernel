@@ -50,6 +50,14 @@ on:
         options:
           - clang
           - gcc
+      kernel_sign:
+        description: "Set the kernel custom signature"
+        required: false
+        default: "-lts"
+        type: choice
+        options:
+          - -lts
+          - -yourname
 
       kernel_config:
         description: "Set the path of kernel .config"
