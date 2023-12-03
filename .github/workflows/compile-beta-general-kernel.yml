@@ -74,7 +74,14 @@ on:
         options:
           - clang
           - gcc
-
+      kernel_sign:
+        description: "Set the kernel custom signature"
+        required: false
+        default: "-beta"
+        type: choice
+        options:
+          - -beta
+          - -yourname
 
 env:
   TZ: America/New_York
