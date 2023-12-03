@@ -50,14 +50,7 @@ on:
         options:
           - clang
           - gcc
-      kernel_sign:
-        description: "Set the kernel custom signature"
-        required: false
-        default: "-ophub"
-        type: choice
-        options:
-          - -ophub
-          - -yourname
+
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
