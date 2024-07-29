@@ -20,6 +20,7 @@ on:
           - codesnas
           - chewitt/linux@amlogic-6.10.y
           - fzdy-zz/6.10.y
+          - torvalds/linux
       kernel_version:
         description: "Select kernel version"
         required: false
@@ -32,6 +33,7 @@ on:
           - 6.1.y
           - 6.6.y
           - 6.10.y
+          - 6.11.y
           - 6.1.y_6.6.y
           - 5.15.y_5.10.y
       kernel_auto:
@@ -88,6 +90,7 @@ on:
           - -winter-storing
           - -uncertain
           - -test
+          - -mainline
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
