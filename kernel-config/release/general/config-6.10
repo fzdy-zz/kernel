@@ -10140,8 +10140,8 @@ CONFIG_INTEGRITY_AUDIT=y
 # CONFIG_DEFAULT_SECURITY_SMACK is not set
 # CONFIG_DEFAULT_SECURITY_TOMOYO is not set
 CONFIG_DEFAULT_SECURITY_APPARMOR=y
-# CONFIG_DEFAULT_SECURITY_DAC is not set
-CONFIG_LSM="lockdown,yama,integrity,apparmor"
+CONFIG_DEFAULT_SECURITY_DAC=y
+CONFIG_LSM="yama,safesetid,integrity,selinux,smack,tomoyo,apparmor"
 
 #
 # Kernel hardening options
