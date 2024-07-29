@@ -20,7 +20,7 @@ on:
           - codesnas
           - chewitt/linux@amlogic-6.10.y
           - fzdy-zz/6.10.y
-          - torvalds/linux
+          - torvalds/linux@master
       kernel_version:
         description: "Select kernel version"
         required: false
