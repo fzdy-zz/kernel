@@ -19,6 +19,7 @@ on:
           - unifreq
           - codesnas
           - chewitt/linux@amlogic-6.10.y
+          - fzdy-zz/6.10.y
       kernel_version:
         description: "Select kernel version"
         required: false
