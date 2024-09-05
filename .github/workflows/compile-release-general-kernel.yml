@@ -89,6 +89,7 @@ on:
           - -autumn-harvesting
           - -winter-storing
           - -uncertain
+          - -lts
           - -test
           - -mainline
       kernel_config:
