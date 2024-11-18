@@ -18,7 +18,7 @@ on:
         options:
           - unifreq
           - codesnas
-          - chewitt/linux@amlogic-6.10.y
+          - chewitt/linux@amlogic-6.12.y
           - fzdy-zz/6.10.y
           - torvalds/linux@master
       kernel_version:
