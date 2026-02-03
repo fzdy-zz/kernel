@@ -186,14 +186,11 @@ jobs:
           kernel_source: ${{ inputs.kernel_source }}
           kernel_version: ${{ inputs.kernel_version }}
           kernel_auto: ${{ inputs.kernel_auto }}
-          delete_source: ${{ inputs.delete_source }}
           kernel_package: ${{ inputs.kernel_package }}
           kernel_toolchain: ${{ inputs.kernel_toolchain }}
           kernel_sign: ${{ inputs.kernel_sign }}
           kernel_config: ${{ inputs.kernel_config }}
-          ccache_clear: ${{ inputs.ccache_clear }}
-          docker_hostpath: /builder
-          docker_image: ophub/armbian-${{ inputs.docker_image }}:arm64
+          compress_format: ${{ inputs.compress_format }}
 
       - name: Upload Kernel to Release
         uses: ncipollo/release-action@main
@@ -202,9 +199,6 @@ jobs:
           tag: kernel_stable
           artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
           allowUpdates: true
-          removeArtifacts: false
-          replacesArtifacts: true
-          makeLatest: true
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             - The kernel can be used to compile Armbian and OpenWrt.
