@@ -189,7 +189,6 @@ jobs:
           kernel_patch: ${{ inputs.kernel_patch }}
           auto_patch: ${{ inputs.auto_patch }}
           ccache_clear: ${{ inputs.ccache_clear }}
-          kernel_sign: -beta
           delete_source: true
           docker_hostpath: /builder
           docker_image: ophub/armbian-${{ inputs.docker_image }}:arm64
